@@ -2,7 +2,7 @@ function Footer() {
     return(
         <>
         <p>
-            Kevin's website is awsome
+            Kevin's website is awesome
         </p>
         </>
     )
