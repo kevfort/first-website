@@ -5,6 +5,8 @@ import About from './About.tsx'
 import Demo from './Demo.tsx'
 import Home from "./Home.tsx"
 import Layout from './Layout.tsx'
+import { Navigate } from 'react-router'
+
 
 const router = createBrowserRouter([
   {
@@ -22,7 +24,11 @@ const router = createBrowserRouter([
       {
         path: '/demo',
         element: <Demo/>
-      }
+      },
+      {
+        path: '*',
+        element: <Navigate to={'/'}/>
+      },
     ]
   }
 ], {basename: "/first-website/"})
