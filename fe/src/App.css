@@ -40,3 +40,24 @@
 .read-the-docs {
   color: #888;
 }
+
+.square {
+  height: 5em;
+  width: 5em;
+  background-color: white;
+  outline-style: solid;
+  outline-color: black;
+  text-align: center;
+}
+
+div.center {
+  margin:auto;
+
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 410px;
+  height: 410px;
+}
