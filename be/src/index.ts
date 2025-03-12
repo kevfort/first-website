@@ -28,6 +28,11 @@ class Room {
     public getGuest():string{
         return(this.guestID);
     }
+    public addGuest({newGuestID}:{newGuestID: string}):void{
+        if(this.guestID == ("nullUser")){
+            this.guestID = newGuestID;
+        }
+    }
     
 };
 class Board {
