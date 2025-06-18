@@ -41,6 +41,13 @@ class Board {
 
         this.boardLayout =[["","",""],["","",""],["","",""]];
     }
+    public makeMove({symbol, coordinate}:{symbol: string, coordinate: [number,number]}):boardArray{
+        if(this.boardLayout[coordinate[0]][coordinate[1]] == ""){
+            this.boardLayout[coordinate[0]][coordinate[1]] = symbol;
+        }
+        return(this.boardLayout);
+    }
+    
 };
 
 
